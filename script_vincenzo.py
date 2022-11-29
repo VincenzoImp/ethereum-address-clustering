@@ -100,7 +100,7 @@ def multi(depth, store_mode ='w'):
     curr_level_address_df = address_df.copy()
     while curr_level < depth:
         max_block_heigth = int(curr_level_address_df["use_untill"].max())
-        step = 10000
+        step = 1000
         new_level = curr_level + 1
         #generate new level of edges and nodes
         with Manager() as manager:
